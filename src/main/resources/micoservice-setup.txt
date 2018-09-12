@@ -1,0 +1,23 @@
+application-ote.properties
+application-prod.properties
+
+-stage environment
+1 first time create mico-service
+application-stage.properties
+
+pom.xml
+need to add spring-boot-starter-actuator to maven
+health checks
+
+go jenkins
+ECS-MICOSERVICE-STAGE DEPLOYMENT
+build with parameters
+memory 384
+path   /stl/*
+priority 14 (check from confluence)
+
+2 after modify
+jenkins again
+
+3 logs aws cloudwatch logs search sitelock
+kibana(can also search logs in cloudwatch log more features)
